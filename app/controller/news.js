@@ -6,7 +6,6 @@ class NewsController extends Controller {
   async index() {
     // this.ctx.body = "这是新闻111";
     var msg='ejs';
-    var list = ['111', '2222']
     await this.ctx.render('news', {
       msg,
       list
