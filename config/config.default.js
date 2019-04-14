@@ -16,7 +16,7 @@ module.exports = appInfo => {
   config.keys = appInfo.name + '_1554483055026_1852';
 
   // add your middleware config here
-  config.middleware = [];
+  config.middleware = [ 'auth' ];
   //配置模板引擎
   config.view = {
     mapping: {

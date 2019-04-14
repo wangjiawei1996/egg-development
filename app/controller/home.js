@@ -4,13 +4,13 @@ const Controller = require('egg').Controller;
 
 class HomeController extends Controller {
   async index() {
-    // console.log(this.config.api);
-    const list = await this.service.news.getNewsList();
-    const user = await this.service.user.getUserInfo();
     await this.ctx.render('home', {
-      list,
-      user
-    }
+      csrf: this.ctx.csrf,
+    });
+  }
+  async add() {
+    console.log(this.ctx.request.body);
+    this.ctx.body = this.ctx.request.body;
   }
 }
 
