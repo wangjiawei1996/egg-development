@@ -6,6 +6,7 @@ class NewsController extends Controller {
   async index() {
     // this.ctx.body = "这是新闻111";
     var msg='ejs';
+    var list = await this.service.news.getNewsList();
     await this.ctx.render('news', {
       msg,
       list

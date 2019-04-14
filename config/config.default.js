@@ -23,6 +23,7 @@ module.exports = appInfo => {
       '.html': 'ejs',
     },
   };
+  config.api = "www.baidu.com/api";
   // add your user config here
   const userConfig = {
     // myAppName: 'egg',
