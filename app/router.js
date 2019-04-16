@@ -6,5 +6,6 @@
 module.exports = app => {
   const { router, controller } = app;
   router.get('/', controller.home.index);
+  // router.get('/loginOut', controller.home.loginOut);
   router.get('/news', controller.news.index);
 };
